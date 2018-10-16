@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/screen_tb_spacing"
+    android:paddingLeft="@dimen/screen_lr_spacing"
+    android:paddingRight="@dimen/screen_lr_spacing"
+    android:paddingTop="@dimen/screen_tb_spacing">
+
+    <EditText
+        android:id="@+id/text_name"
+        style="@style/FormTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/your_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/text_type"
+        style="@style/FormTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="@string/account_type"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/text_username"
+        style="@style/FormTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/signup_tb_spacing"
+        android:enabled="false"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/text_email"
+        style="@style/FormTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/signup_tb_spacing"
+        android:enabled="false"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/text_password"
+        style="@style/FormTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/signup_tb_spacing"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/text_rePassword"
+        style="@style/FormTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/signup_tb_spacing"
+        android:hint="@string/re_password"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:id="@+id/layout_orgData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/text_address"
+            style="@style/FormTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/signup_tb_spacing"
+            android:hint="@string/address" />
+
+        <EditText
+            android:id="@+id/text_orgType"
+            style="@style/FormTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/signup_tb_spacing"
+            android:hint="@string/org_type" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="@dimen/screen_tb_spacing"
+            android:text="@string/update_c"
+            android:textSize="@dimen/normal_text" />
+    </FrameLayout>
+</LinearLayout>

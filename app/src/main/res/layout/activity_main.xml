@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height">
+
+        <ImageView
+            android:contentDescription="@string/report"
+            android:id="@+id/image_report"
+            style="@style/TopBarIcon"
+            android:src="@drawable/report_icon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <View
+            style="@style/TabsBarSeperator"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/tabs_seperator_height" />
+
+        <ImageView
+            android:contentDescription="@string/turn"
+            android:id="@+id/image_turn"
+            android:src="@drawable/key_icon"
+            style="@style/TopBarIcon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <View
+            style="@style/TabsBarSeperator"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/tabs_seperator_height" />
+
+        <ImageView
+            android:contentDescription="@string/trip"
+            style="@style/TopBarIcon"
+            android:id="@+id/image_trip"
+            android:src="@drawable/trip_icon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <View
+            style="@style/TabsBarSeperator"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/tabs_seperator_height" />
+
+        <ImageView
+            android:contentDescription="@string/Vehicles"
+            style="@style/TopBarIcon"
+            android:id="@+id/image_vehicles"
+            android:src="@drawable/car_icon_white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <View
+            style="@style/TabsBarSeperator"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/tabs_seperator_height" />
+
+        <ImageView
+            android:contentDescription="@string/more"
+            style="@style/TopBarIcon"
+            android:id="@+id/image_settings"
+            android:src="@drawable/settings_icon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Spinner
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/spinner_vehicles_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_vehicle" />
+
+    </FrameLayout>
+</LinearLayout>

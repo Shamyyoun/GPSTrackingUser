@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/card_view_margin"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="@dimen/normal_text"
+            android:text="@string/edit"
+            android:layout_weight="1"
+            android:id="@+id/button_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textSize="@dimen/normal_text"
+            android:text="@string/delete"
+            android:layout_weight="1"
+            android:id="@+id/button_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginLeft="@dimen/card_view_margin"
+            android:layout_marginRight="@dimen/card_view_margin"
+            android:layout_marginBottom="@dimen/card_view_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardView"
+            app:cardBackgroundColor="@color/card_view_bg"
+            app:cardElevation="@dimen/card_view_elevation"
+            app:cardCornerRadius="@dimen/card_view_radius">
+
+            <LinearLayout
+                android:padding="@dimen/card_view_padding"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="name"
+                    android:id="@+id/text_name"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="name"
+                    android:id="@+id/text_id"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+</com.daimajia.swipe.SwipeLayout>

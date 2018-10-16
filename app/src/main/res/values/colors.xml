@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#C65B5B</color>
+    <color name="primary_dark">#8F3234</color>
+    <color name="accent">#ffffff</color>
+    <color name="dark_white">#ffe7e7e7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="spinner_popup_bg">#B74B4B</color>
+    <color name="trans_black">#44000000</color>
+    <color name="dark_gray">#212121</color>
+    <color name="light_gray">#575656</color>
+    <color name="card_view_bg">#ffe7e7e7</color>
+
+</resources>

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mahmoudelshamy.gpstracking.userapp.VehiclesActivity">
+    <item
+        android:icon="@drawable/add_icon"
+        android:id="@+id/item_addVehicle"
+        android:title="@string/add_vehicle"
+        android:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="splash_logo_dimen">106dp</dimen>
+    <dimen name="login_logo_dimen">93dp</dimen>
+    <dimen name="login_logo_margin">26dp</dimen>
+    <dimen name="normal_text">13sp</dimen>
+    <dimen name="large_text">16sp</dimen>
+    <dimen name="small_text">10sp</dimen>
+    <dimen name="submit_button_margin">13dp</dimen>
+    <dimen name="checkbox_margin">6dp</dimen>
+    <dimen name="checkbox_text_size">10sp</dimen>
+    <dimen name="form_secondary_button_padding">6dp</dimen>
+    <dimen name="signup_tb_spacing">3dp</dimen>
+    <dimen name="spinner_item_padding">6dp</dimen>
+    <dimen name="top_bar_icon_padding">6dp</dimen>
+    <dimen name="top_bar_height">36dp</dimen>
+    <dimen name="tabs_seperator_height">26dp</dimen>
+    <dimen name="additional_view_image_dimen">54dp</dimen>
+    <dimen name="additional_view_text_margin">10dp</dimen>
+    <dimen name="spinner_vehicles_margin">3dp</dimen>
+    <dimen name="card_view_margin">5dp</dimen>
+    <dimen name="card_view_padding">6dp</dimen>
+    <dimen name="card_view_elevation">2dp</dimen>
+    <dimen name="card_view_radius">4dp</dimen>
+    <dimen name="listview_subitem_lr_padding">13dp</dimen>
+    <dimen name="listview_subitem_tb_padding">10dp</dimen>
+    <dimen name="find_on_map_ic_dimen">23dp</dimen>
+
+</resources>

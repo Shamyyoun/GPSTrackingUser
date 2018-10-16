@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/screen_lr_spacing"
+    android:paddingRight="@dimen/screen_lr_spacing"
+    android:paddingTop="@dimen/screen_tb_spacing"
+    android:paddingBottom="@dimen/screen_tb_spacing">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_marginTop="@dimen/login_logo_margin"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_white"
+        android:layout_width="@dimen/login_logo_dimen"
+        android:layout_height="@dimen/login_logo_dimen" />
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/layout_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                style="@style/FormTextField"
+                android:id="@+id/text_username"
+                android:hint="@string/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                style="@style/FormTextField"
+                android:inputType="textPassword"
+                android:id="@+id/text_password"
+                android:hint="@string/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:layout_marginTop="@dimen/checkbox_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/checkbox_text_size"
+                android:id="@+id/check_rememberMe"
+                android:checked="false" />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_marginTop="@dimen/submit_button_margin"
+                android:text="@string/login_c"
+                android:textSize="@dimen/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_login"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/FormSecondaryActionButton"
+            android:layout_gravity="center"
+            android:id="@+id/text_signup"
+            android:text="@string/signup"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/FormSecondaryActionButton"
+            android:layout_gravity="center"
+            android:id="@+id/text_getPassword"
+            android:text="@string/get_password"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

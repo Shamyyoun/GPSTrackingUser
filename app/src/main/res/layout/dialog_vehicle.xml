@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/screen_lr_spacing"
+    android:paddingRight="@dimen/screen_lr_spacing"
+    android:paddingTop="@dimen/screen_tb_spacing"
+    android:paddingBottom="@dimen/screen_tb_spacing"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_id"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_password"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_name"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_purpose"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:inputType="number"
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/licence_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_licenceNumber"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:inputType="number"
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_number"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_color"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:inputType="number"
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_year"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_model"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:textSize="@dimen/normal_text"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:hint="@string/brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_brand"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:paddingTop="@dimen/screen_tb_spacing"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_okVehicle"
+                android:text="@string/ok"
+                android:textSize="@dimen/normal_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/button_cancelVehicle"
+                android:text="@string/cancel"
+                android:textSize="@dimen/normal_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        android:textSize="@dimen/normal_text"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vehicle_added_successfully"
+        android:id="@+id/text_success" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_operation" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_position" />
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/screen_tb_spacing"
+    android:paddingLeft="@dimen/screen_lr_spacing"
+    android:paddingRight="@dimen/screen_lr_spacing"
+    android:paddingTop="@dimen/screen_tb_spacing">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/text_trackingInterval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tracking_interval"
+            android:inputType="number"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/normal_text" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/screen_tb_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ok"
+                android:textSize="@dimen/normal_text" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textSize="@dimen/normal_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/tracking_interval_updated_successfully"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/normal_text"
+        android:visibility="gone" />
+</FrameLayout>

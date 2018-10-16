@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/screen_lr_spacing"
+            android:paddingRight="@dimen/screen_lr_spacing"
+            android:paddingTop="@dimen/screen_tb_spacing"
+            android:paddingBottom="@dimen/screen_tb_spacing">
+
+            <EditText
+                android:inputType="textPersonName"
+                style="@style/FormTextField"
+                android:id="@+id/text_name"
+                android:hint="@string/your_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:popupBackground="@color/spinner_popup_bg"
+                android:layout_marginTop="@dimen/signup_tb_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_type" />
+
+            <EditText
+                android:layout_marginTop="@dimen/signup_tb_spacing"
+                style="@style/FormTextField"
+                android:id="@+id/text_username"
+                android:hint="@string/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginTop="@dimen/signup_tb_spacing"
+                style="@style/FormTextField"
+                android:id="@+id/text_email"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginTop="@dimen/signup_tb_spacing"
+                style="@style/FormTextField"
+                android:id="@+id/text_password"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginTop="@dimen/signup_tb_spacing"
+                style="@style/FormTextField"
+                android:id="@+id/text_rePassword"
+                android:hint="@string/re_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_orgData"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_marginTop="@dimen/signup_tb_spacing"
+                    style="@style/FormTextField"
+                    android:id="@+id/text_address"
+                    android:hint="@string/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_marginTop="@dimen/signup_tb_spacing"
+                    style="@style/FormTextField"
+                    android:id="@+id/text_orgType"
+                    android:hint="@string/org_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button_signup"
+        android:layout_marginTop="@dimen/screen_tb_spacing"
+        android:layout_marginBottom="@dimen/screen_tb_spacing"
+        android:text="@string/signup_c"
+        android:textSize="@dimen/normal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

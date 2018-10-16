@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:src="@drawable/add_icon_circled"
+                android:layout_width="@dimen/additional_view_image_dimen"
+                android:layout_height="@dimen/additional_view_image_dimen"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_marginTop="@dimen/additional_view_text_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_vehicles_available"
+                android:textSize="@dimen/normal_text"
+                android:textColor="@color/dark_gray"
+                android:id="@+id/text_noVehicles" />
+
+            <TextView
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/small_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tap_to_add"
+                android:id="@+id/text_tapToAdd" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_add"
+            android:background="@drawable/additional_view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/view_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <views.SlideExpandableListView
+            android:divider="@null"
+            android:listSelector="#00000000"
+            android:drawSelectorOnTop="false"
+            android:groupIndicator="@null"
+            android:id="@+id/list_vehicles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</FrameLayout>
